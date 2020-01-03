@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/index.css">
+    <link rel="stylesheet" type="text/css" href="/static/pdf-html/XIEYuxiang_CV.pdf_files/style.css" />
+    <link rel="shortcut icon" href="/public/favicon.ico" type="image/x-icon" />
+    <title>XIE Yuxiang</title>
+    <style>
+          .leftnav{
+            position: relative;
+        }
+        .content-nav{
+            position: fixed;
+            left: 200px;
+        }
+        .content-nav li:first-child a{
+            background-color:  #0d66b7;
+        }
+        @media (max-width: 768px) { 
+            .photography img{
+                height:100px;
+            }
+            .content-nav{
+                position: relative;
+                left: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="nav navbar-default navbar-fixed-top navbar-inverse">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">
+                    <span>XIE Yuxiang</span>
+                </a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navc">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- navbar-header -->
+            <div class="collapse navbar-collapse navbar-right" id="navc">
+                <ul class="nav navbar-nav" id="nav">
+                    <li class="navActive"><a href="/home">About me</a></li>
+                    <!-- <li><a href="/awards">Awards</a></li> -->
+                    <li><a href="/publications">Publications and Papers</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+    </div>
+    <!--nav-->
+    <div class="clearfix"></div>
+ <div id="content_box">
+        <div class="row">
+            <div class="col-xs-12 col-sm-4 col-md-4 leftnav">
+                <ul class="content-nav">
+                    <li><a href="/cv">CV</a></li>
+                    <li><a href="/photograph">Photograph</a></li>
+                    <!-- <li><a href="#">Contact</a></li> -->
+                </ul>
+            </div>
+            <div class="col-xs-12 col-sm-8 col-md-8 pic">
+                <div class="content-details">
+                  <h2 class="mycv">My CV</h2>
+                  <p>A PDF version of my CV can be downloaded <ins><a href="/static/PDF/XIE Yuxiang-CV.pdf" download="/static/PDF/XIE Yuxiang-CV.pdf" >HERE</a></ins></p>
+                  <div class="cv-details">
+                        <iframe src="/static/pdf-html/XIEYuxiang_CV.pdf.html" border="0" width="100%" height="1056px" frameborder="no" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe>
+
+
+                  </div><!--cv-->
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>Copyright © 2019 - 2020  <a href="/">xie-yuxiang.com</a>   All Rights Reserved. <a href="http://www.beian.miit.gov.cn/" target="_blank">粤ICP备19142068号</a></p>
+        </footer>
+    <!-- <script src="/node_modules/jquery/dist/jquery.min.js"></script> -->
+    <!-- <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/public/js/index.js"></script>
+    <script>
+        $(function(){
+            let pic = ($(".pic").width()+88) + "px"
+          $(".content-nav").css("right",pic)
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/public/css/index.css">
+    <title>XIE Yuxiang</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .publications-subjects{
+            margin-top: 20px;
+        }
+        .panel-heading{
+            font-weight: bold;
+            color: #00417c;
+        }
+        .content-title{
+            /* font-weight: bold; */
+        }
+        .videos-img img{
+            width: 300px;
+            height: auto;
+            cursor:default;
+        }
+        .news-videos  a{
+            position: relative;
+            display: inline-block;
+            margin: 10px;
+        }
+        a[class="videos-img"]::before{
+            content: "";
+            width: 40px;
+            height: 40px;
+            background-image:url(/public/img/play_icon80.png);
+            background-repeat:no-repeat;
+            background-size: cover;
+            z-index: 999;
+            position: absolute;
+            top: 50%;
+            left:50%;
+            transform: translate(-50%,-100%);
+        }
+        .news-videos  a > p{
+            margin-top: 4px;
+            color: #000;
+        }
+        .news-videos  a > p:hover{
+            color: #337ab7;
+        }
+        #content_box h1{
+            font-family: "Open Sans", sans-serif;
+            font-weight: bold;
+            color: #337ab7
+        }
+        #content_box ul li{
+           list-style: disc;
+           margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav navbar-default navbar-fixed-top navbar-inverse">
+            <div class="navbar-header">
+                <a href="/" class="navbar-brand">
+                    <span>XIE Yuxiang</span>
+                </a>
+                <button class="navbar-toggle" data-toggle="collapse" data-target="#navc">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <!-- navbar-header -->
+            <div class="collapse navbar-collapse navbar-right" id="navc">
+                <ul class="nav navbar-nav" id="nav">
+                    <li><a href="/home">About me</a></li>
+                    <!-- <li><a href="/awards">Awards</a></li> -->
+                    <li class="navActive"><a href="/publications">Publications and Papers</a></li>
+                    <li><a href="/portfolio">Portfolio</a></li>
+                </ul>
+            </div>
+    </div>
+    <!--nav-->
+    <div class="clearfix"></div>
+    <div id="content_box" class="container">
+            <h1>Publications and Papers</h1>
+            <ul>
+                <li><a href="#publications-subjects">   1.Publications by Subjects</a></li>
+                <li><a href="#publications-news">    2.Pear Video News</a></li>
+            </ul>
+        <div class="publications-subjects" id="publications-subjects">
+            <div class="panel">
+                <div class="panel-heading">
+                   Publications by Subjects
+                </div>
+                <div class="panel-body">
+                    <p class="content-title"><i>The influence and thinking of artificial intelligence on journalism, Research on Transmission Competence</i> 2019（09）: 243</p>
+                    <p style="text-indent: 2em;">I published a paper entitled The Influence and Thinking of Artificial Intelligence on Journalism after studying the Topic Selection and Writing of Thesis in my junior year. Nowadays, artificial intelligence has been widely used in various industries in society. Journalism is also further integrating with artificial intelligence technology. From my point of view, artificial intelligence can save us a lot of resources, especially in the digital media industry, which has a great prospect and potential shortly soon. In this paper, I explore more details about how AI influence Journalism and figure out the most critical factor.</p>
+                    <div class="d-or-b">
+                        <a href="/static/PDF/AI.pdf" target="blank" download="/static/PDF/AI.pdf">PDF</a>
+                        <a href="/static/PDF/AI.pdf" target="blank">Slides</a>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="publications-news" id="publications-news">
+            <div class="panel">
+                <div class="panel-heading">
+                    Pear Video News
+                </div>
+                <div class="panel-body">
+                    <div class="news-videos">
+                        <!-- <div> -->
+                        <a href="https://video.pearvideo.com/mp4/adshort/20181224/cont-1496637-13402089_adpkg-ad_hd.mp4" target="_blank" class="videos-img">
+                            <img class="img-responsive " src="https://image.pearvideo.com/cont/20181224/cont-1496637-11766372.png" alt="班宠！34个男生为全班唯一女生庆生">
+                            <p>班宠！34个男生为全班唯一女生庆生</p>
+                        </a>
+                        <a href="https://video.pearvideo.com/mp4/adshort/20181220/cont-1485392-12596990-153425_adpkg-ad_hd.mp4" target="_blank" class="videos-img">
+                            <img class="img-responsive " src="https://image.pearvideo.com/main/20181220/12596990-153530-0.png" alt="情侣二战考研：睡觉偷懒会被对方打">
+                            <p>情侣二战考研：睡觉偷懒会被对方打</p>
+                        </a>
+                    <!-- </div> -->
+                        <a href="https://video.pearvideo.com/mp4/adshort/20181113/cont-1475638-11966063-221921_adpkg-ad_hd.mp4" target="_blank" class="videos-img">
+                            <img class="img-responsive " src="https://image1.pearvideo.com/main/20181113/11966063-221929-0.png" alt="她大学穷游14省:写稿送外卖挣路费">
+                            <p>她大学穷游14省:写稿送外卖挣路费</p>
+                        </a>
+                        <a href="https://video.pearvideo.com/mp4/adshort/20181120/cont-1479172-11966063-135216_adpkg-ad_hd.mp4" target="_blank" class="videos-img">
+                            <img class="img-responsive " src="https://image1.pearvideo.com/main/20181120/11966063-134200-0.png" alt="奶爸推婴儿车跑马：儿子中途睡着了">
+                            <p>奶爸推婴儿车跑马：儿子中途睡着了</p>
+                        </a>
+
+                        <a href="https://video.pearvideo.com/mp4/adshort/20181107/cont-1471275-11966063-140629_adpkg-ad_hd.mp4" target="_blank" class="videos-img">
+                            <img class="img-responsive " src="https://image1.pearvideo.com/main/20181107/11966063-140703-0.png" alt="奶爸推婴儿车跑马：儿子中途睡着了">
+                            <p>货车运外卖进大学,学生:食堂人太多</p>
+                        </a>
+                        <a href="https://video.pearvideo.com/mp4/adshort/20181107/cont-1471150-11966063-114100_adpkg-ad_hd.mp4" target="_blank" class="videos-img">
+                            <img class="img-responsive " src="https://image1.pearvideo.com/main/20181107/11966063-114123-0.png" alt="奶爸推婴儿车跑马：儿子中途睡着了">
+                            <p>放不下心！阿姨花海拍照保安贴身跟</p>
+                        </a>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <div class="clearfix"></div>
+    <footer class="footer">
+        <p>Copyright © 2019 - 2020  <a href="/">xie-yuxiang.com</a>   All Rights Reserved. <a href="http://www.beian.miit.gov.cn/" target="_blank">粤ICP备19142068号</a></p>
+    </footer>
+    <!-- <script src="/node_modules/jquery/dist/jquery.min.js"></script> -->
+    <!-- <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script> -->
+    <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/public/js/index.js"></script>
+</body>
+</html>
